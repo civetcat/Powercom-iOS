@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65DA618D1B72222800FD24E3 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA618C1B72222800FD24E3 /* AsyncUdpSocket.m */; };
+		65E7669A1B69F319006B87B0 /* Page1.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E766971B69F319006B87B0 /* Page1.m */; };
+		65E7669B1B69F319006B87B0 /* Page2.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E766991B69F319006B87B0 /* Page2.m */; };
+		65E7F0631B6218B40096817E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F0621B6218B40096817E /* main.m */; };
+		65E7F0661B6218B40096817E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F0651B6218B40096817E /* AppDelegate.m */; };
+		65E7F06F1B6218B40096817E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E7F06D1B6218B40096817E /* Main.storyboard */; };
+		65E7F0741B6218B40096817E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E7F0721B6218B40096817E /* LaunchScreen.xib */; };
+		65E7F0801B6218B40096817E /* PowercomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F07F1B6218B40096817E /* PowercomTests.m */; };
+		65E7F0971B6230B70096817E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F0961B6230B70096817E /* Cell.m */; };
+		65E7F09D1B62381C0096817E /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F09C1B62381C0096817E /* Setting.m */; };
+		65E807991B72E53700DDB9F4 /* AMBouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807941B72E53700DDB9F4 /* AMBouncingView.m */; };
+		65E8079A1B72E53700DDB9F4 /* AMSmoothAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807971B72E53700DDB9F4 /* AMSmoothAlertView.m */; };
+		65E8079B1B72E53700DDB9F4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 65E807981B72E53700DDB9F4 /* assets */; };
+		65E807A11B72E5F600DDB9F4 /* MPNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E8079E1B72E5F600DDB9F4 /* MPNotificationView.m */; };
+		65E807A21B72E5F600DDB9F4 /* OBGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807A01B72E5F600DDB9F4 /* OBGradientView.m */; };
+		65E807A81B72F55C00DDB9F4 /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807A51B72F55C00DDB9F4 /* ASValuePopUpView.m */; };
+		65E807A91B72F55C00DDB9F4 /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807A71B72F55C00DDB9F4 /* ASValueTrackingSlider.m */; };
+		65E807AC1B73065E00DDB9F4 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E807AB1B73065E00DDB9F4 /* GPUImage.framework */; };
+		65F3BBC01B7093BC00594F2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F3BBBF1B7093BC00594F2E /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65E7F07A1B6218B40096817E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E7F0551B6218B40096817E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65E7F05C1B6218B40096817E;
+			remoteInfo = Powercom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65DA618B1B72222800FD24E3 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = Powercom/AsyncUdpSocket.h; sourceTree = "<group>"; };
+		65DA618C1B72222800FD24E3 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = Powercom/AsyncUdpSocket.m; sourceTree = "<group>"; };
+		65E766961B69F319006B87B0 /* Page1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1.h; sourceTree = "<group>"; };
+		65E766971B69F319006B87B0 /* Page1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page1.m; sourceTree = "<group>"; };
+		65E766981B69F319006B87B0 /* Page2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page2.h; sourceTree = "<group>"; };
+		65E766991B69F319006B87B0 /* Page2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page2.m; sourceTree = "<group>"; };
+		65E7F05D1B6218B40096817E /* Powercom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Powercom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E7F0611B6218B40096817E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E7F0621B6218B40096817E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65E7F0641B6218B40096817E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65E7F0651B6218B40096817E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65E7F06E1B6218B40096817E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65E7F0731B6218B40096817E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		65E7F0791B6218B40096817E /* PowercomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowercomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E7F07E1B6218B40096817E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E7F07F1B6218B40096817E /* PowercomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PowercomTests.m; sourceTree = "<group>"; };
+		65E7F0951B6230B70096817E /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cell.h; path = ../Cell.h; sourceTree = "<group>"; };
+		65E7F0961B6230B70096817E /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell.m; path = ../Cell.m; sourceTree = "<group>"; };
+		65E7F09B1B62381C0096817E /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Setting.h; path = ../Setting.h; sourceTree = "<group>"; };
+		65E7F09C1B62381C0096817E /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Setting.m; path = ../Setting.m; sourceTree = "<group>"; };
+		65E807931B72E53700DDB9F4 /* AMBouncingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMBouncingView.h; path = "斷線跳出警告/AMBouncingView.h"; sourceTree = "<group>"; };
+		65E807941B72E53700DDB9F4 /* AMBouncingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMBouncingView.m; path = "斷線跳出警告/AMBouncingView.m"; sourceTree = "<group>"; };
+		65E807951B72E53700DDB9F4 /* AMSmoothAlertConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSmoothAlertConstants.h; path = "斷線跳出警告/AMSmoothAlertConstants.h"; sourceTree = "<group>"; };
+		65E807961B72E53700DDB9F4 /* AMSmoothAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSmoothAlertView.h; path = "斷線跳出警告/AMSmoothAlertView.h"; sourceTree = "<group>"; };
+		65E807971B72E53700DDB9F4 /* AMSmoothAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSmoothAlertView.m; path = "斷線跳出警告/AMSmoothAlertView.m"; sourceTree = "<group>"; };
+		65E807981B72E53700DDB9F4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "斷線跳出警告/assets"; sourceTree = "<group>"; };
+		65E8079D1B72E5F600DDB9F4 /* MPNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPNotificationView.h; path = "狀態列通知/MPNotificationView.h"; sourceTree = "<group>"; };
+		65E8079E1B72E5F600DDB9F4 /* MPNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPNotificationView.m; path = "狀態列通知/MPNotificationView.m"; sourceTree = "<group>"; };
+		65E8079F1B72E5F600DDB9F4 /* OBGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBGradientView.h; path = "狀態列通知/OBGradientView.h"; sourceTree = "<group>"; };
+		65E807A01B72E5F600DDB9F4 /* OBGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OBGradientView.m; path = "狀態列通知/OBGradientView.m"; sourceTree = "<group>"; };
+		65E807A41B72F55C00DDB9F4 /* ASValuePopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASValuePopUpView.h; path = "第二頁進度條/ASValuePopUpView.h"; sourceTree = "<group>"; };
+		65E807A51B72F55C00DDB9F4 /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASValuePopUpView.m; path = "第二頁進度條/ASValuePopUpView.m"; sourceTree = "<group>"; };
+		65E807A61B72F55C00DDB9F4 /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASValueTrackingSlider.h; path = "第二頁進度條/ASValueTrackingSlider.h"; sourceTree = "<group>"; };
+		65E807A71B72F55C00DDB9F4 /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASValueTrackingSlider.m; path = "第二頁進度條/ASValueTrackingSlider.m"; sourceTree = "<group>"; };
+		65E807AB1B73065E00DDB9F4 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		65F3BBBF1B7093BC00594F2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65E7F05A1B6218B40096817E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E807AC1B73065E00DDB9F4 /* GPUImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E7F0761B6218B40096817E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65DA618E1B72223300FD24E3 /* UDP 通訊 */ = {
+			isa = PBXGroup;
+			children = (
+				65DA618B1B72222800FD24E3 /* AsyncUdpSocket.h */,
+				65DA618C1B72222800FD24E3 /* AsyncUdpSocket.m */,
+			);
+			name = "UDP 通訊";
+			sourceTree = "<group>";
+		};
+		65E7F0541B6218B40096817E = {
+			isa = PBXGroup;
+			children = (
+				65E807AB1B73065E00DDB9F4 /* GPUImage.framework */,
+				65E807AA1B72F56200DDB9F4 /* Page2-進度條 */,
+				65E807A31B72E60600DDB9F4 /* 狀態列通知 */,
+				65E8079C1B72E54800DDB9F4 /* 斷線跳出警告 */,
+				65DA618E1B72223300FD24E3 /* UDP 通訊 */,
+				65E7F05F1B6218B40096817E /* Powercom */,
+				65E7F07C1B6218B40096817E /* PowercomTests */,
+				65E7F05E1B6218B40096817E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65E7F05E1B6218B40096817E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65E7F05D1B6218B40096817E /* Powercom.app */,
+				65E7F0791B6218B40096817E /* PowercomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65E7F05F1B6218B40096817E /* Powercom */ = {
+			isa = PBXGroup;
+			children = (
+				65E7F0641B6218B40096817E /* AppDelegate.h */,
+				65E7F0651B6218B40096817E /* AppDelegate.m */,
+				65E766961B69F319006B87B0 /* Page1.h */,
+				65E766971B69F319006B87B0 /* Page1.m */,
+				65E766981B69F319006B87B0 /* Page2.h */,
+				65E766991B69F319006B87B0 /* Page2.m */,
+				65E7F09B1B62381C0096817E /* Setting.h */,
+				65E7F09C1B62381C0096817E /* Setting.m */,
+				65E7F0951B6230B70096817E /* Cell.h */,
+				65E7F0961B6230B70096817E /* Cell.m */,
+				65E7F06D1B6218B40096817E /* Main.storyboard */,
+				65E7F0721B6218B40096817E /* LaunchScreen.xib */,
+				65F3BBBF1B7093BC00594F2E /* Images.xcassets */,
+				65E7F0601B6218B40096817E /* Supporting Files */,
+			);
+			path = Powercom;
+			sourceTree = "<group>";
+		};
+		65E7F0601B6218B40096817E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65E7F0611B6218B40096817E /* Info.plist */,
+				65E7F0621B6218B40096817E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65E7F07C1B6218B40096817E /* PowercomTests */ = {
+			isa = PBXGroup;
+			children = (
+				65E7F07F1B6218B40096817E /* PowercomTests.m */,
+				65E7F07D1B6218B40096817E /* Supporting Files */,
+			);
+			path = PowercomTests;
+			sourceTree = "<group>";
+		};
+		65E7F07D1B6218B40096817E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65E7F07E1B6218B40096817E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65E8079C1B72E54800DDB9F4 /* 斷線跳出警告 */ = {
+			isa = PBXGroup;
+			children = (
+				65E807931B72E53700DDB9F4 /* AMBouncingView.h */,
+				65E807941B72E53700DDB9F4 /* AMBouncingView.m */,
+				65E807951B72E53700DDB9F4 /* AMSmoothAlertConstants.h */,
+				65E807961B72E53700DDB9F4 /* AMSmoothAlertView.h */,
+				65E807971B72E53700DDB9F4 /* AMSmoothAlertView.m */,
+				65E807981B72E53700DDB9F4 /* assets */,
+			);
+			name = "斷線跳出警告";
+			sourceTree = "<group>";
+		};
+		65E807A31B72E60600DDB9F4 /* 狀態列通知 */ = {
+			isa = PBXGroup;
+			children = (
+				65E8079D1B72E5F600DDB9F4 /* MPNotificationView.h */,
+				65E8079E1B72E5F600DDB9F4 /* MPNotificationView.m */,
+				65E8079F1B72E5F600DDB9F4 /* OBGradientView.h */,
+				65E807A01B72E5F600DDB9F4 /* OBGradientView.m */,
+			);
+			name = "狀態列通知";
+			sourceTree = "<group>";
+		};
+		65E807AA1B72F56200DDB9F4 /* Page2-進度條 */ = {
+			isa = PBXGroup;
+			children = (
+				65E807A41B72F55C00DDB9F4 /* ASValuePopUpView.h */,
+				65E807A51B72F55C00DDB9F4 /* ASValuePopUpView.m */,
+				65E807A61B72F55C00DDB9F4 /* ASValueTrackingSlider.h */,
+				65E807A71B72F55C00DDB9F4 /* ASValueTrackingSlider.m */,
+			);
+			name = "Page2-進度條";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65E7F05C1B6218B40096817E /* Powercom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E7F0831B6218B40096817E /* Build configuration list for PBXNativeTarget "Powercom" */;
+			buildPhases = (
+				65E7F0591B6218B40096817E /* Sources */,
+				65E7F05A1B6218B40096817E /* Frameworks */,
+				65E7F05B1B6218B40096817E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Powercom;
+			productName = Powercom;
+			productReference = 65E7F05D1B6218B40096817E /* Powercom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65E7F0781B6218B40096817E /* PowercomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65E7F0861B6218B40096817E /* Build configuration list for PBXNativeTarget "PowercomTests" */;
+			buildPhases = (
+				65E7F0751B6218B40096817E /* Sources */,
+				65E7F0761B6218B40096817E /* Frameworks */,
+				65E7F0771B6218B40096817E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65E7F07B1B6218B40096817E /* PBXTargetDependency */,
+			);
+			name = PowercomTests;
+			productName = PowercomTests;
+			productReference = 65E7F0791B6218B40096817E /* PowercomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65E7F0551B6218B40096817E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = daniel;
+				TargetAttributes = {
+					65E7F05C1B6218B40096817E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					65E7F0781B6218B40096817E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 65E7F05C1B6218B40096817E;
+					};
+				};
+			};
+			buildConfigurationList = 65E7F0581B6218B40096817E /* Build configuration list for PBXProject "Powercom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65E7F0541B6218B40096817E;
+			productRefGroup = 65E7F05E1B6218B40096817E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65E7F05C1B6218B40096817E /* Powercom */,
+				65E7F0781B6218B40096817E /* PowercomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65E7F05B1B6218B40096817E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E8079B1B72E53700DDB9F4 /* assets in Resources */,
+				65F3BBC01B7093BC00594F2E /* Images.xcassets in Resources */,
+				65E7F06F1B6218B40096817E /* Main.storyboard in Resources */,
+				65E7F0741B6218B40096817E /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E7F0771B6218B40096817E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65E7F0591B6218B40096817E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E7F0661B6218B40096817E /* AppDelegate.m in Sources */,
+				65E807A21B72E5F600DDB9F4 /* OBGradientView.m in Sources */,
+				65E7F09D1B62381C0096817E /* Setting.m in Sources */,
+				65E807991B72E53700DDB9F4 /* AMBouncingView.m in Sources */,
+				65E8079A1B72E53700DDB9F4 /* AMSmoothAlertView.m in Sources */,
+				65E807A81B72F55C00DDB9F4 /* ASValuePopUpView.m in Sources */,
+				65E807A91B72F55C00DDB9F4 /* ASValueTrackingSlider.m in Sources */,
+				65E7F0631B6218B40096817E /* main.m in Sources */,
+				65E807A11B72E5F600DDB9F4 /* MPNotificationView.m in Sources */,
+				65DA618D1B72222800FD24E3 /* AsyncUdpSocket.m in Sources */,
+				65E7669B1B69F319006B87B0 /* Page2.m in Sources */,
+				65E7669A1B69F319006B87B0 /* Page1.m in Sources */,
+				65E7F0971B6230B70096817E /* Cell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E7F0751B6218B40096817E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E7F0801B6218B40096817E /* PowercomTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65E7F07B1B6218B40096817E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65E7F05C1B6218B40096817E /* Powercom */;
+			targetProxy = 65E7F07A1B6218B40096817E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65E7F06D1B6218B40096817E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65E7F06E1B6218B40096817E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65E7F0721B6218B40096817E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65E7F0731B6218B40096817E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65E7F0811B6218B40096817E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65E7F0821B6218B40096817E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65E7F0841B6218B40096817E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Powercom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		65E7F0851B6218B40096817E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Powercom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		65E7F0871B6218B40096817E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PowercomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Powercom.app/Powercom";
+			};
+			name = Debug;
+		};
+		65E7F0881B6218B40096817E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PowercomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Powercom.app/Powercom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65E7F0581B6218B40096817E /* Build configuration list for PBXProject "Powercom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E7F0811B6218B40096817E /* Debug */,
+				65E7F0821B6218B40096817E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E7F0831B6218B40096817E /* Build configuration list for PBXNativeTarget "Powercom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E7F0841B6218B40096817E /* Debug */,
+				65E7F0851B6218B40096817E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65E7F0861B6218B40096817E /* Build configuration list for PBXNativeTarget "PowercomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65E7F0871B6218B40096817E /* Debug */,
+				65E7F0881B6218B40096817E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65E7F0551B6218B40096817E /* Project object */;
+}
