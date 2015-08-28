@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFAC0DDB-DE29-4820-9DF1-1C5FB1C40219</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Powercom</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FBBCF577931D26A85111E5E72D8963952302FBE6</key>
+		<string>https://github.com/civetcat/Powercom-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Powercom/Powercom.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FBBCF577931D26A85111E5E72D8963952302FBE6</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/civetcat/Powercom-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FBBCF577931D26A85111E5E72D8963952302FBE6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FBBCF577931D26A85111E5E72D8963952302FBE6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Powercom%20iOS%20(%E6%B8%AC%E8%A9%A6%E4%B8%AD%EF%BC%89</string>
+		</dict>
+	</array>
+</dict>
+</plist>
