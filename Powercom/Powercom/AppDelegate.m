@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "AMSmoothAlertView.h"
 #import "MPNotificationView.h"
 
 @interface AppDelegate ()
@@ -17,73 +16,15 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    // Assign tab bar item with titles
-    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    UITabBar *tabBar = tabBarController.tabBar;
-    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
-    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
-    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
-    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
-    
-//    tabBarItem1.title = @"Home";
-//    tabBarItem2.title = @"Maps";
-//    tabBarItem3.title = @"My Plan";
-//    tabBarItem4.title = @"Settings";
-    
-    
-    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
-    
-    //[tabBarItem1 initWithTitle:@"123" image:@"p1" tag:0];
-    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"p1_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p1.png"]
-    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@"p2_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p2.png"]
-    [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@"p3_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p3.png"]
-    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"p4_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p4.png"]
-
-    
-    /*
-    //開始//
-    
-    NSLog(@"open");
-    
-    global.globalData = [[NSMutableArray alloc] initWithCapacity:300];
-    global.PRO_now = true;
-    global.SNMP_now = true;
-    global.IP = nil;
-    global.Password_correct = false;
-    _disconnect_timer_counter = 0;
-    disconnect_flag = true;
-    global.language_now_is = 2;
-    
-    udpSocket = [[AsyncUdpSocket alloc] initWithDelegate:self];
-    NSError *error = nil;
-    [udpSocket bindToPort:2601 error:&error]; //綁定一個port 讓發送的source port / 指定接收的port 都是這一個
-    [udpSocket receiveWithTimeout:-1 tag:0];//Start listening for a UDP packet.
-    
-    NSString *store_ip = [userDefaults stringForKey:@"store IP"];
-    NSLog(@"Store ip =%@",store_ip);
-    global.IP = store_ip;
-    if (store_ip == nil) {
-        //連線
-        UITextView *textView = [[UITextView alloc]initWithFrame:CGRectMake(12, 50, 260, 100)];
-        [textView setText:@""];
-        textView.tag =10;
-        init_pop_ip = [[UIAlertView alloc]initWithTitle:@"Input Target IP:" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Enter",nil];
-        init_pop_ip.alertViewStyle = UIAlertViewStylePlainTextInput;
-        [init_pop_ip addSubview:textView];
-        [init_pop_ip show];
-    }
-    
-    timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(sender) userInfo:nil repeats:YES];
-    disconnect_timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(disconnect_dectect) userInfo:nil repeats:YES];
-    */
-    
-    //預設語言
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"en_update" ofType:@"plist"];//_update
-    NSDictionary *rootDictionary =[[NSDictionary alloc] initWithContentsOfFile:path];
-    
-    
+- (void)Language_all {
+    global.language_ch = [NSArray arrayWithObjects:
+                          /*1-10*/ @"輸入電壓",@"輸出電壓", @"電池存量", @"負  載", @"輸入電壓 (V)", @"輸出電壓 (V)", @"UPS負載 (%)", @"預估電池存量 (%)", @"預估電池剩餘時間 (分)",@"電池狀態",
+                          /*11-20*/@"電池故障",@"電池低壓", @"正  常", @"電池充電", @"電池放電", @"UPS電池測試", @"電池測試完成", @"UPS狀態", @"UPS 故障",@"過  載",
+                          /*21-30*/@"ON Line",@"Bypass", @"UPS 正常", @"AVR 升壓", @"AVR 降壓", @"電力狀態", @"市電供電", @"電池供電", @"UPS電池測試",@"電池測試完成",
+                          /*31-40*/@"UPS 正常",@"電池供電", @"UPS 連線中斷", @"UPS 連線恢復", @"PRO 連線中斷", @"PRO 連線恢復", @"電力中斷", @"電力恢復", @"連線",@"語言",
+                          /*41-50*/@"UPS電池測試",@"控制", @"歷史紀錄", @"PRO", @"SNMP", @"讀取中", @"輸入IP位址", @"確定", @"取消",@"密碼",
+                          /*51-60*/@"驗證中",@"密碼正確", @"密碼錯誤", @"Outlet 1 Control", @"Outlet 2 Control", @"電腦關機", @"電腦重開機", @"UPS重開機", @"警告!",@"請輸入密碼",
+                          /*61-70*/@"即將開啟Outlet 1,您確定執行此動作?",@"即將關閉Outlet 1,您確定執行此動作?", @"即將開啟Outlet 2,您確定執行此動作?", @"即將關閉Outlet 2,您確定執行此動作?", @"即將關閉電腦,您確定執行此動作?", @"即將重開電腦,您確定執行此動作?", @"UPS即將重新開機,您確定執行此動作?", @"儲存IP", @"開啟",@"關閉",nil];
     global.language_en = [NSArray arrayWithObjects:
                           /*1-10*/@"Input Voltage",@"Output Voltage", @"Battery Capacity", @"Load", @"Input Voltage (V)",@"Output Voltage (V)", @"Load (%)", @"Battery Level (%)", @"Battery Backup Time (Min)", @"Battery Status",
                           
@@ -158,6 +99,77 @@
                           /*41-50*/@"إختبار البطارية",@"التحكم", @"السجل التاريخى للأحداث", @"البرنامج", @"SNMP", @"تحميل", @"أدخل رقم تعريف الشبكة", @"إدخال", @"إلغاء",@"كلمة المرور",
                           /*51-60*/@"التحقق",@"كلمة مقبولة", @"خطأ فى كلمة المرور", @"التحكم فى خرج 1", @"التحكم فى خرج 2", @"إغلاق الحاسب", @"إعادة تشغيل الحاسب", @"إعادةتشغيل الجهاز", @"تحذير!",@"كلمة المرور لازمة",
                           /*61-70*/@"الخرج 1 سيعمل",@"الخرج 1 سيوقف", @"الخرج 2 سيعمل", @"الخرج 2 سيوقف", @"سيغلق الحاسب", @"سيعاد تشغيل الحاسب", @"سيعاد تشغيل الجهاز", @"حفظ رقم تعريف الشبكة", @"تشغيل",@"إيقاف",nil];
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    // Assign tab bar item with titles
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabBarItem3 = [tabBar.items objectAtIndex:2];
+    UITabBarItem *tabBarItem4 = [tabBar.items objectAtIndex:3];
+    
+//    tabBarItem1.title = @"Home";
+//    tabBarItem2.title = @"Maps";
+//    tabBarItem3.title = @"My Plan";
+//    tabBarItem4.title = @"Settings";
+    
+    
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    //[tabBarItem1 initWithTitle:@"123" image:@"p1" tag:0];
+    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"p1_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p1.png"]
+    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@"p2_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p2.png"]
+    [tabBarItem3 setFinishedSelectedImage:[UIImage imageNamed:@"p3_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p3.png"]
+    [tabBarItem4 setFinishedSelectedImage:[UIImage imageNamed:@"p4_selected.png"] withFinishedUnselectedImage:nil];//[UIImage imageNamed:@"p4.png"]
+
+    
+    
+    //開始//
+    
+    NSLog(@"open");
+    
+    global.globalData = [[NSMutableArray alloc] initWithCapacity:300];
+    global.PRO_now = true;
+    global.SNMP_now = true;
+    global.IP = nil;
+    global.Password_correct = false;
+    _disconnect_timer_counter = 0;
+    disconnect_flag = true;
+    global.language_now_is = 2;
+    userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    udpSocket = [[AsyncUdpSocket alloc] initWithDelegate:self];
+    NSError *error = nil;
+    [udpSocket bindToPort:2601 error:&error]; //綁定一個port 讓發送的source port / 指定接收的port 都是這一個
+    [udpSocket receiveWithTimeout:-1 tag:0];//Start listening for a UDP packet.
+    
+    NSString *store_ip = [userDefaults stringForKey:@"store IP"];
+    NSLog(@"Store ip =%@",store_ip);
+    global.IP = store_ip;
+    NSLog(@"IP = %@",global.IP);
+    if (store_ip == nil) {
+        //連線
+        UITextView *textView = [[UITextView alloc]initWithFrame:CGRectMake(12, 50, 260, 100)];
+        [textView setText:@""];
+        textView.tag =10;
+        init_pop_ip = [[UIAlertView alloc]initWithTitle:@"Input Target IP:" message:@"" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Enter",nil];
+        init_pop_ip.alertViewStyle = UIAlertViewStylePlainTextInput;
+        [init_pop_ip addSubview:textView];
+        [init_pop_ip show];
+    }
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(sender) userInfo:nil repeats:YES];
+    disconnect_timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(disconnect_dectect) userInfo:nil repeats:YES];
+    
+    
+    //預設語言
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"en_update" ofType:@"plist"];//_update
+    NSDictionary *rootDictionary =[[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    [self Language_all];
     
     global.language_ru = [NSArray arrayWithObjects:
                           /*1-10*/ @"Входное напряжение",@"Выходное напряжение", @"Ёмкость АКБ", @"Нагрузка", @"Входное напряжение (В)", @"Выходное напряжение (В)", @"Нагрузка (%)", @"Уровень заряда АКБ (%)", @"Время автономной работы (мин)",@"Состояние АКБ",
@@ -168,8 +180,23 @@
                           /*51-60*/@"Проверка пароля",@"Пароль подтверждён", @"Неверный пароль", @"Группа розеток 1", @"Группа розеток 2", @"Выключение ПК", @"Перезагрузка ПК", @"Перезагрузка ИБП", @"Внимание",@"Необходим ввод пароля",
                           /*61-70*/@"Группа розеток 1 ВКЛ",@"Группа розеток 2 ВЫКЛ", @"Группа розеток 2 ВКЛ", @"Группа розеток 2 ВЫКЛ", @"ПК будет выключен", @"ПК будет перезагружен", @"ИБП будет перезагружен", @"Сохранить IP-адрес", @"ВКЛ",@"ВЫКЛ",nil];
     
-
-    //結束//
+    
+    bgTask = [[BackgroundTask alloc] init];
+    [bgTask startBackgroundTasks:2 target:self selector:@selector(sender)];
+    
+    
+    NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *customObjectArray;
+    NSData *savedArray = [currentDefaults objectForKey:@"mySavedArray"];
+    if (savedArray != nil)
+    {
+        NSMutableArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
+        if (oldArray != nil) {
+            global.history_data = [oldArray mutableCopy];
+        } else {
+            customObjectArray = [[NSMutableArray alloc] init];
+        }
+    }
     return YES;
 }
 
@@ -193,6 +220,10 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    //要關掉app了
+    NSLog(@"app will close");
+    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:global.history_data] forKey:@"mySavedArray"];
+    NSLog(@"history array = %@",global.history_data[0]);
 }
 
 //Server端 接收
@@ -235,6 +266,10 @@
             global.PRO_now = true;
             global.SNMP_now = false;
             _disconnect_timer_counter = 0;
+            if (global.click_connect_button) {
+                [self notify_Warning:@"Connect!"];
+                global.click_connect_button = false;
+            }
         }
     }
     if (global.globalData.count == 9) {
@@ -283,6 +318,10 @@
         global.SNMP_now = true;
         global.PRO_now = false;
         _disconnect_timer_counter = 0;
+        if (global.click_connect_button) {
+            [self notify_Warning:@"Connect!"];
+            global.click_connect_button = false;
+        }
     }
     
     [self analyze];
@@ -312,7 +351,7 @@
     
     //Outlet Control-snmp
     const unsigned char snmp_outlet1_on[]  = {48, 47, 2, 1, 0, 4, 6, 112, 117, 98, 108, 105, 99, -93, 34, 2, 4, 27, -75, -74, 47, 2, 1, 0, 2, 1, 0, 48, 20, 48, 18, 6, 13, 43, 6, 1, 4, 1, -54, 85, 1, 2, 13, 1, 2, 1, 2, 1, 1 };
-    const unsigned char snmp_outlet1_off[] = {48, 47, 2, 1, 0, 4, 6, 112, 117, 98, 108, 105, 99, -93, 34, 2, 4, 27, -75, -74, 45, 2, 1, 0, 2, 1, 0, 48, 20, 48, 18, 6, 13, 43, 6, 1, 4, 1, -54, 85, 1, 2, 13, 1, 2, 1, 2, 1, 0};
+    const unsigned char snmp_outlet1_off[] = {48, 47, 2, 1, 0, 4, 6, 112, 117, 98, 108, 105, 99, -93, 34, 2, 4, 27, -75, -74, 45, 2, 1, 0, 2, 1, 0, 48, 20, 48, 18, 6, 13, 43, 6, 1, 4, 1, -54, 85, 1, 2, 13, 1, 2, 1, 2, 1, 0 };
     const unsigned char snmp_outlet2_on[]  = {48, 47, 2, 1, 0, 4, 6, 112, 117, 98, 108, 105, 99, -93, 34, 2, 4, 27, -75, -74, 51, 2, 1, 0, 2, 1, 0, 48, 20, 48, 18, 6, 13, 43, 6, 1, 4, 1, -54, 85, 1, 2, 13, 1, 2, 2, 2, 1, 1 };
     const unsigned char snmp_outlet2_off[] = {48, 47, 2, 1, 0, 4, 6, 112, 117, 98, 108, 105, 99, -93, 34, 2, 4, 27, -75, -74, 49, 2, 1, 0, 2, 1, 0, 48, 20, 48, 18, 6, 13, 43, 6, 1, 4, 1, -54, 85, 1, 2, 13, 1, 2, 2, 2, 1, 0 };
     
@@ -325,7 +364,7 @@
     NSData *data_self_snmp = [NSData dataWithBytes:send_self_snmp_byte length:sizeof(send_self_snmp_byte)];
     NSData *data_deep_snmp = [NSData dataWithBytes:send_deep_snmp_byte length:sizeof(send_deep_snmp_byte)];
     NSData *data_cancel_snmp = [NSData dataWithBytes:send_cancel_snmp_byte length:sizeof(send_cancel_snmp_byte)];
-    NSData *data_snmp_outlet1_on = [NSData dataWithBytes:snmp_outlet1_on length:sizeof(data_snmp_outlet1_on)];
+    NSData *data_snmp_outlet1_on = [NSData dataWithBytes:snmp_outlet1_on length:sizeof(snmp_outlet1_on)];
     NSData *data_snmp_outlet1_off = [NSData dataWithBytes:snmp_outlet1_off length:sizeof(snmp_outlet1_off)];
     NSData *data_snmp_outlet2_on = [NSData dataWithBytes:snmp_outlet2_on length:sizeof(snmp_outlet2_on)];
     NSData *data_snmp_outlet2_off = [NSData dataWithBytes:snmp_outlet2_off length:sizeof(snmp_outlet2_off)];
@@ -334,7 +373,7 @@
     
     
     if (global.IP != nil) {
-        
+    
         if (global.PRO_Quick_test) {
             //QUICK test
             [udpSocket sendData:data_self_pro toHost:global.IP port:2601 withTimeout:-1 tag:tag];
@@ -368,7 +407,7 @@
                 
                 if (global.OUT1_DISABLE) {
                     if (global.Password_correct) {
-                        NSData *data = [self OutletControl:global.reply_password and:1];
+                        NSData *data = [self OutletControl:global.reply_password and:1];//進入副函式 組合指令＋密碼
                         if (data != nil)
                             [udpSocket sendData:data toHost:global.IP port:2601 withTimeout:-1 tag:tag];
                         
@@ -380,7 +419,7 @@
                 
                 if (global.OUT2_ENABLE) {
                     if (global.Password_correct) {
-                        NSData *data = [self OutletControl:global.reply_password and:2];
+                        NSData *data = [self OutletControl:global.reply_password and:2];//進入副函式 組合指令＋密碼
                         if (data != nil)
                             [udpSocket sendData:data toHost:global.IP port:2601 withTimeout:-1 tag:tag];
                         
@@ -391,7 +430,7 @@
                 
                 if (global.OUT2_DISABLE) {
                     if (global.Password_correct) {
-                        NSData *data = [self OutletControl:global.reply_password and:3];
+                        NSData *data = [self OutletControl:global.reply_password and:3];//進入副函式 組合指令＋密碼
                         if (data != nil)
                             [udpSocket sendData:data toHost:global.IP port:2601 withTimeout:-1 tag:tag];
                         
@@ -403,7 +442,7 @@
                 
                 if (global.PC_reboot) {
                     if (global.Password_correct) {
-                        NSData *data = [self OutletControl:global.reply_password and:4];
+                        NSData *data = [self OutletControl:global.reply_password and:4];//進入副函式 組合指令＋密碼
                         if (data != nil)
                             [udpSocket sendData:data toHost:global.IP port:2601 withTimeout:-1 tag:tag];
                         
@@ -414,7 +453,7 @@
                 
                 if(global.PC_shutdown){
                     if (global.Password_correct) {
-                        NSData *data = [self OutletControl:global.reply_password and:5];
+                        NSData *data = [self OutletControl:global.reply_password and:5];//進入副函式 組合指令＋密碼
                         if (data != nil)
                             [udpSocket sendData:data toHost:global.IP port:2601 withTimeout:-1 tag:tag];
                         global.ENABLE_send = false;
@@ -424,7 +463,7 @@
                 
                 if(global.UPS_reboot){
                     if (global.Password_correct) {
-                        NSData *data = [self OutletControl:global.reply_password and:6];
+                        NSData *data = [self OutletControl:global.reply_password and:6];//進入副函式 組合指令＋密碼
                         if (data != nil)
                             [udpSocket sendData:data toHost:global.IP port:2601 withTimeout:-1 tag:tag];
                         global.ENABLE_send = false;
@@ -518,32 +557,43 @@
     NSMutableData * data_pc_shutdown = [NSData dataWithBytes:pc_shutdown length:sizeof(pc_shutdown)];
     NSMutableData * data_ups_reboot = [NSData dataWithBytes:ups_reboot length:sizeof(ups_reboot)];
     
+    
+    int Password_len = [Password length];
+    NSData *data_password_len = [NSData dataWithBytes: &Password_len length:1];
+
     [pro_out1_on appendData:data_out1_on];
+    [pro_out1_on appendData:data_password_len];
     [pro_out1_on appendData:data_password];
     [pro_out1_on appendData:data_end];
     
     [pro_out1_off appendData:data_out1_off];
+    [pro_out1_off appendData:data_password_len];
     [pro_out1_off appendData:data_password];
     [pro_out1_off appendData:data_end];
     
     [pro_out2_on appendData:data_out2_on];
+    [pro_out2_on appendData:data_password_len];
     [pro_out2_on appendData:data_password];
     [pro_out2_on appendData:data_end];
     
     [pro_out2_off appendData:data_out2_off];
+    [pro_out2_off appendData:data_password_len];
     [pro_out2_off appendData:data_password];
     [pro_out2_off appendData:data_end];
     
     [pro_pc_reboot appendData:data_pc_reboot];
-    //[pro_pc_reboot appendData:data_password];
+    [pro_pc_reboot appendData:data_password_len];
+    [pro_pc_reboot appendData:data_password];
     [pro_pc_reboot appendData:data_end];
     
     [pro_pc_shutdown appendData:data_pc_shutdown];
-    //[pro_pc_shutdown appendData:data_password];
+    [pro_pc_shutdown appendData:data_password_len];
+    [pro_pc_shutdown appendData:data_password];
     [pro_pc_shutdown appendData:data_end];
     
     
     [pro_ups_reboot appendData:data_pc_reboot];
+    [pro_ups_reboot appendData:data_password_len];
     [pro_ups_reboot appendData:data_password];
     [pro_ups_reboot appendData:data_end];
     
@@ -745,26 +795,6 @@
             
         }
         
-        //        NSLog(@"ivolt= %d",ivolt);
-        //        NSLog(@"ovolt= %d",ovolt);
-        //        NSLog(@"batTime= %d",batTime);
-        //        NSLog(@"load= %d",load);
-        //        NSLog(@"batLevel= %d",batTime);
-        //        NSLog(@"ifreq= %d",ifreq);
-        //        NSLog(@"ofreq= %d",ofreq);
-        //        NSLog(@"temp= %d",temp);
-        //        NSLog(@"on_line= %d",on_line);
-        //        NSLog(@"BypassAVR= %d",BypassAVR);
-        //        NSLog(@"inv= %d",inv);
-        //        NSLog(@"batlow= %d",batlow);
-        //        NSLog(@"oload= %d",oload);
-        //        NSLog(@"ups_fail= %d",ups_fail);
-        //        NSLog(@"badBat= %d",badBat);
-        //        NSLog(@"test= %d",test);
-        //        NSLog(@"connect= %d",connect);
-        
-        //snmp
-        
     }
     @catch (NSException *exception) {
         //<#Handle an exception thrown in the @try block#>
@@ -776,8 +806,9 @@
 
 -(void) alert_popup:(Byte* ) status{
     //UPS狀態/Battery狀態/電力狀態
-    NSLog(@"%d",global.test);
-    NSLog(@"%d",status[6]);
+    
+    NSString *history_tmp = @"";
+    
     if (status[0] == 0) // connect = normal
     {
         if (Connect_pre == 1)// 原本斷線
@@ -793,6 +824,7 @@
             if(Event_01[0] == 1)
             {
                 //Write_internal_File(1);//傳入事件(1)-Connect Restore
+                history_tmp = @"Connect Restore";//[global.history_data addObject:@"Connect Restore"];//Connect Restore
                 Event_01[0] = 0;//關閉開關,不能再次寫入
             }
         }
@@ -813,7 +845,7 @@
             if(Event_TF[2] == true){//事件發生
                 if(Event_01[1] == 0)
                 {
-                    //Write_internal_File(2);
+                    history_tmp = @"UPS Failed";//[global.history_dataaddObject:@"UPS Failed"];//UPS Failed
                     Event_01[1] = 1;//關閉開關,不能再次寫入
                 }
             }
@@ -830,7 +862,7 @@
             if(Event_TF[3] == false){
                 if(Event_01[1] == 1)
                 {
-                    //Write_internal_File(3);//傳入事件(2)-UPS Fail Restore
+                   history_tmp = @"UPS Fail Restore";//[global.history_dataaddObject:@""];//傳入事件(2)-UPS Fail Restore
                     Event_01[1] = 0;//關閉開關,不能再次寫入
                 }
             }
@@ -852,7 +884,7 @@
             if(Event_TF[4] == true){//事件發生
                 if(Event_01[2] == 0)
                 {
-                    //Write_internal_File(4);//Battery bad
+                    history_tmp = @"Battery bad";//[global.history_dataaddObject:@""];//Battery bad
                     Event_01[2] = 1;//關閉開關,不能再次寫入
                 }
             }
@@ -869,7 +901,7 @@
             if(Event_TF[5] == false){
                 if(Event_01[2] == 1)
                 {
-                    //Write_internal_File(5);//傳入事件(5)- Battery bad Restore
+                    history_tmp = @"Battery bad Restore";//[global.history_dataaddObject:@""];//傳入事件(5)- Battery bad Restore
                     Event_01[2] = 0;//關閉開關,不能再次寫入
                 }
             }
@@ -890,7 +922,7 @@
             if(Event_TF[6] == true){//事件發生
                 if(Event_01[3] == 0)
                 {
-                    //Write_internal_File(6);//OverLoad
+                    history_tmp = @"OverLoad";//[global.history_dataaddObject:@"OverLoad"];//OverLoad
                     Event_01[3] = 1;//關閉開關,不能再次寫入
                 }
             }
@@ -908,7 +940,7 @@
             if(Event_TF[7] == false){
                 if(Event_01[3] == 1)
                 {
-                    //Write_internal_File(7);//傳入事件()- Overload Restore
+                    history_tmp = @"Overload Restore";//[global.history_dataaddObject:@"Power Restore"];//傳入事件()- Overload Restore
                     Event_01[3] = 0;//關閉開關,不能再次寫入
                 }
             }
@@ -931,7 +963,7 @@
             if(Event_TF[8] == true){//事件發生
                 if(Event_01[4] == 0)
                 {
-                    //Write_internal_File(8);//Battery Low
+                    history_tmp = @"Battery Low";//[global.history_dataaddObject:@"Battery Low"];//Battery Low
                     Event_01[4] = 1;//關閉開關,不能再次寫入
                 }
             }
@@ -948,7 +980,7 @@
             if(Event_TF[9] == false){
                 if(Event_01[4] == 1)
                 {
-                    //Write_internal_File(9);//傳入事件(9)-BatteryLow Restore
+                    history_tmp = @"Battery Low Restore";//[global.history_dataaddObject:@"BatteryLow Restore"];//傳入事件(9)-BatteryLow Restore
                     Event_01[4] = 0;//關閉開關,不能再次寫入
                 }
             }
@@ -971,7 +1003,7 @@
             if(Event_TF[10] == true){//事件發生
                 if(Event_01[5] == 0)
                 {
-                    //Write_internal_File(10);//Power Failure
+                    history_tmp = @"Power Failure";//[global.history_dataaddObject:@"Power Restore"];//Power Failure
                     Event_01[5] = 1;//關閉開關,不能再次寫入
                 }
             }
@@ -988,7 +1020,7 @@
             if(Event_TF[11] == false){
                 if(Event_01[5] == 1)
                 {
-                    //Write_internal_File(11);//傳入事件(11)- Power Restore
+                    history_tmp = @"Power Restore";//[global.history_dataaddObject:@"Power Restore"];//傳入事件(11)- Power Restore
                     Event_01[5] = 0;//關閉開關,不能再次寫入
                 }
             }
@@ -1011,7 +1043,7 @@
             if(Event_TF[12] == true){//事件發生
                 if(Event_01[6] == 0)
                 {
-                    //Write_internal_File(12);//UPS Battery Test
+                    history_tmp = @"UPS Battery Test";//[global.history_dataaddObject:@"UPS Battery Test"];//UPS Battery Test
                     Event_01[6] = 1;//關閉開關,不能再次寫入
                 }
             }
@@ -1027,7 +1059,7 @@
                 }
                 else{
                     [self notify_Warning:@"Battery Failed"];//"Battery Failed"
-                    //Write_internal_File(4);//"Battery Failed"
+                    history_tmp = @"Battery Failed";//[global.history_dataaddObject:@"Battery Failed"];//"Battery Failed"
                 }
                 Notify_Flag = false;
                 Event_TF[12] = false;//設定為正常
@@ -1090,7 +1122,7 @@
             if(Event_TF[13] == true){//事件發生
                 if(Event_01[7] == 0)
                 {
-                    //Write_internal_File(13);//BypassAVR
+                    history_tmp = @"BypassAVR";//[global.history_dataaddObject:@"BypassAVR"];//BypassAVR
                     Event_01[7] = 1;//關閉開關,不能再次寫入
                 }
             }
@@ -1106,7 +1138,7 @@
             if(Event_TF[14] == false){
                 if(Event_01[7] == 1)
                 {
-                    //Write_internal_File(14);//傳入事件(13)-BypassAVR Restore
+                    history_tmp = @"BypassAVR Restore";//[global.history_dataaddObject:@"BypassAVR Restore"];//傳入事件(13)-BypassAVR Restore
                     Event_01[7] = 0;//關閉開關,不能再次寫入
                 }
             }
@@ -1128,11 +1160,23 @@
         if(Event_TF[0] == true){//事件發生
             if(Event_01[0] == 0)
             {
-                //Write_internal_File(0);//Disconnect
+                history_tmp = @"Disconnect";//[global.history_dataaddObject:@"Disconnect"];//Disconnect
                 Event_01[0] = 1;//關閉開關,不能再次寫入
             }
         }
         Connect_pre = 1;
+    }
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM-dd HH:mm:ss"];
+    NSString *correctDate = [formatter stringFromDate:date];
+   
+    NSString *combine_date_event = [NSString stringWithFormat:@"%@   %@",correctDate,history_tmp];
+     NSLog(@"%@",combine_date_event);
+    if (![history_tmp  isEqual: @""]) {
+        [global.history_data addObject:combine_date_event];
+
     }
     
 }
@@ -1144,16 +1188,6 @@
                                 detail:message
                                  image:nil//[UIImage imageNamed:@"mopedDog.jpeg"]
                            andDuration:5.0];
-    //讓app icon上增加紅色的圓圈數字
-    
-    UILocalNotification *note = [UILocalNotification new];
-    note.alertBody = message;
-    //note.applicationIconBadgeNumber -= 1;//減少1
-    //note.applicationIconBadgeNumber = 1;//設定1
-    note.soundName = UILocalNotificationDefaultSoundName;
-    note.fireDate = [NSDate dateWithTimeIntervalSinceNow:0.1];
-    [[UIApplication sharedApplication] scheduleLocalNotification:note];
-    
 }
 
 -(void) disconnect_dectect{
@@ -1184,9 +1218,11 @@
                 if (global.SNMP_now) {
                     disconnect_multi_language = global.language_now[33];
                 }
-                AMSmoothAlertView *alert = [[AMSmoothAlertView alloc]initFadeAlertWithTitle:@"Sorry!" andText:disconnect_multi_language andCancelButton:NO forAlertType:AlertFailure];
-                [alert.defaultButton setTitle:@"Too Bad :(" forState:UIControlStateNormal];
-                [alert show];
+//                AMSmoothAlertView *alert = [[AMSmoothAlertView alloc]initFadeAlertWithTitle:@"Sorry!" andText:disconnect_multi_language andCancelButton:NO forAlertType:AlertFailure];
+//                [alert.defaultButton setTitle:@"Too Bad :(" forState:UIControlStateNormal];
+//                [alert show];
+                
+                [self notify_Warning:@"Disconnect!"];//check background ok
             }
         }
     }
@@ -1211,10 +1247,23 @@
         
         NSString *store_ip = [userDefaults stringForKey:@"store IP"];
         NSLog(@"%@",store_ip);
+        global.click_connect_button = true;
     }
     
 }
 
-
+//禁止螢幕旋轉
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        return UIInterfaceOrientationMaskAll;
+        
+    }
+    else
+    {
+        return UIInterfaceOrientationMaskPortrait ;
+    }
+}
 
 @end

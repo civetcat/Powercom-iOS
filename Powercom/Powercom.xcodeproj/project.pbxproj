@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655F02671B7AF82F00841835 /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F02661B7AF82F00841835 /* Info.m */; };
+		655F02691B7B0D9800841835 /* bg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 655F02681B7B0D9800841835 /* bg2.jpg */; };
+		655F026C1B7B1BE700841835 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F026B1B7B1BE700841835 /* UIImageView+LBBlurredImage.m */; };
+		655F02721B7B1D7600841835 /* PACBlurryScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F026F1B7B1D7600841835 /* PACBlurryScrollView.m */; };
+		655F02731B7B1D7600841835 /* UIImage+PACBlurryEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F02711B7B1D7600841835 /* UIImage+PACBlurryEffect.m */; };
+		655F02751B7B253300841835 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 655F02741B7B253300841835 /* bg1.jpg */; };
 		65DA618D1B72222800FD24E3 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA618C1B72222800FD24E3 /* AsyncUdpSocket.m */; };
 		65E7669A1B69F319006B87B0 /* Page1.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E766971B69F319006B87B0 /* Page1.m */; };
 		65E7669B1B69F319006B87B0 /* Page2.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E766991B69F319006B87B0 /* Page2.m */; };
@@ -17,15 +23,14 @@
 		65E7F0801B6218B40096817E /* PowercomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F07F1B6218B40096817E /* PowercomTests.m */; };
 		65E7F0971B6230B70096817E /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F0961B6230B70096817E /* Cell.m */; };
 		65E7F09D1B62381C0096817E /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E7F09C1B62381C0096817E /* Setting.m */; };
-		65E807991B72E53700DDB9F4 /* AMBouncingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807941B72E53700DDB9F4 /* AMBouncingView.m */; };
-		65E8079A1B72E53700DDB9F4 /* AMSmoothAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807971B72E53700DDB9F4 /* AMSmoothAlertView.m */; };
-		65E8079B1B72E53700DDB9F4 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 65E807981B72E53700DDB9F4 /* assets */; };
 		65E807A11B72E5F600DDB9F4 /* MPNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E8079E1B72E5F600DDB9F4 /* MPNotificationView.m */; };
 		65E807A21B72E5F600DDB9F4 /* OBGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807A01B72E5F600DDB9F4 /* OBGradientView.m */; };
 		65E807A81B72F55C00DDB9F4 /* ASValuePopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807A51B72F55C00DDB9F4 /* ASValuePopUpView.m */; };
 		65E807A91B72F55C00DDB9F4 /* ASValueTrackingSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E807A71B72F55C00DDB9F4 /* ASValueTrackingSlider.m */; };
-		65E807AC1B73065E00DDB9F4 /* GPUImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65E807AB1B73065E00DDB9F4 /* GPUImage.framework */; };
+		65F12CDC1B7C295700F2FC3C /* History_event.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F12CDB1B7C295700F2FC3C /* History_event.m */; };
 		65F3BBC01B7093BC00594F2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F3BBBF1B7093BC00594F2E /* Images.xcassets */; };
+		65F80B161B7831B30097D0F5 /* AlartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F80B151B7831B30097D0F5 /* AlartViewController.m */; };
+		65F80B1A1B78A8F30097D0F5 /* BackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F80B191B78A8F30097D0F5 /* BackgroundTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +44,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		655F02651B7AF82F00841835 /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		655F02661B7AF82F00841835 /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		655F02681B7B0D9800841835 /* bg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg2.jpg; path = ../../../bg2.jpg; sourceTree = "<group>"; };
+		655F026A1B7B1BE700841835 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+LBBlurredImage.h"; path = "模糊背景/UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		655F026B1B7B1BE700841835 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+LBBlurredImage.m"; path = "模糊背景/UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		655F026E1B7B1D7600841835 /* PACBlurryScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PACBlurryScrollView.h; path = "模糊背景/PACBlurryScrollView.h"; sourceTree = "<group>"; };
+		655F026F1B7B1D7600841835 /* PACBlurryScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PACBlurryScrollView.m; path = "模糊背景/PACBlurryScrollView.m"; sourceTree = "<group>"; };
+		655F02701B7B1D7600841835 /* UIImage+PACBlurryEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+PACBlurryEffect.h"; path = "模糊背景/UIImage+PACBlurryEffect.h"; sourceTree = "<group>"; };
+		655F02711B7B1D7600841835 /* UIImage+PACBlurryEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+PACBlurryEffect.m"; path = "模糊背景/UIImage+PACBlurryEffect.m"; sourceTree = "<group>"; };
+		655F02741B7B253300841835 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg1.jpg; path = ../../../bg1.jpg; sourceTree = "<group>"; };
 		65DA618B1B72222800FD24E3 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncUdpSocket.h; path = Powercom/AsyncUdpSocket.h; sourceTree = "<group>"; };
 		65DA618C1B72222800FD24E3 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncUdpSocket.m; path = Powercom/AsyncUdpSocket.m; sourceTree = "<group>"; };
 		65E766961B69F319006B87B0 /* Page1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page1.h; sourceTree = "<group>"; };
@@ -59,12 +74,6 @@
 		65E7F0961B6230B70096817E /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cell.m; path = ../Cell.m; sourceTree = "<group>"; };
 		65E7F09B1B62381C0096817E /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Setting.h; path = ../Setting.h; sourceTree = "<group>"; };
 		65E7F09C1B62381C0096817E /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Setting.m; path = ../Setting.m; sourceTree = "<group>"; };
-		65E807931B72E53700DDB9F4 /* AMBouncingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMBouncingView.h; path = "斷線跳出警告/AMBouncingView.h"; sourceTree = "<group>"; };
-		65E807941B72E53700DDB9F4 /* AMBouncingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMBouncingView.m; path = "斷線跳出警告/AMBouncingView.m"; sourceTree = "<group>"; };
-		65E807951B72E53700DDB9F4 /* AMSmoothAlertConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSmoothAlertConstants.h; path = "斷線跳出警告/AMSmoothAlertConstants.h"; sourceTree = "<group>"; };
-		65E807961B72E53700DDB9F4 /* AMSmoothAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMSmoothAlertView.h; path = "斷線跳出警告/AMSmoothAlertView.h"; sourceTree = "<group>"; };
-		65E807971B72E53700DDB9F4 /* AMSmoothAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AMSmoothAlertView.m; path = "斷線跳出警告/AMSmoothAlertView.m"; sourceTree = "<group>"; };
-		65E807981B72E53700DDB9F4 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "斷線跳出警告/assets"; sourceTree = "<group>"; };
 		65E8079D1B72E5F600DDB9F4 /* MPNotificationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPNotificationView.h; path = "狀態列通知/MPNotificationView.h"; sourceTree = "<group>"; };
 		65E8079E1B72E5F600DDB9F4 /* MPNotificationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPNotificationView.m; path = "狀態列通知/MPNotificationView.m"; sourceTree = "<group>"; };
 		65E8079F1B72E5F600DDB9F4 /* OBGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OBGradientView.h; path = "狀態列通知/OBGradientView.h"; sourceTree = "<group>"; };
@@ -73,8 +82,13 @@
 		65E807A51B72F55C00DDB9F4 /* ASValuePopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASValuePopUpView.m; path = "第二頁進度條/ASValuePopUpView.m"; sourceTree = "<group>"; };
 		65E807A61B72F55C00DDB9F4 /* ASValueTrackingSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASValueTrackingSlider.h; path = "第二頁進度條/ASValueTrackingSlider.h"; sourceTree = "<group>"; };
 		65E807A71B72F55C00DDB9F4 /* ASValueTrackingSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASValueTrackingSlider.m; path = "第二頁進度條/ASValueTrackingSlider.m"; sourceTree = "<group>"; };
-		65E807AB1B73065E00DDB9F4 /* GPUImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPUImage.framework; sourceTree = "<group>"; };
+		65F12CDA1B7C295700F2FC3C /* History_event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History_event.h; sourceTree = "<group>"; };
+		65F12CDB1B7C295700F2FC3C /* History_event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History_event.m; sourceTree = "<group>"; };
 		65F3BBBF1B7093BC00594F2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		65F80B141B7831B30097D0F5 /* AlartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlartViewController.h; path = "警告視窗動畫/AlartViewController.h"; sourceTree = "<group>"; };
+		65F80B151B7831B30097D0F5 /* AlartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlartViewController.m; path = "警告視窗動畫/AlartViewController.m"; sourceTree = "<group>"; };
+		65F80B181B78A8F30097D0F5 /* BackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackgroundTask.h; path = "背景持續運行/BackgroundTask.h"; sourceTree = "<group>"; };
+		65F80B191B78A8F30097D0F5 /* BackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackgroundTask.m; path = "背景持續運行/BackgroundTask.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E807AC1B73065E00DDB9F4 /* GPUImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +109,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655F026D1B7B1C2C00841835 /* 模糊背景 */ = {
+			isa = PBXGroup;
+			children = (
+				655F026E1B7B1D7600841835 /* PACBlurryScrollView.h */,
+				655F026F1B7B1D7600841835 /* PACBlurryScrollView.m */,
+				655F02701B7B1D7600841835 /* UIImage+PACBlurryEffect.h */,
+				655F02711B7B1D7600841835 /* UIImage+PACBlurryEffect.m */,
+				655F026A1B7B1BE700841835 /* UIImageView+LBBlurredImage.h */,
+				655F026B1B7B1BE700841835 /* UIImageView+LBBlurredImage.m */,
+			);
+			name = "模糊背景";
+			sourceTree = "<group>";
+		};
 		65DA618E1B72223300FD24E3 /* UDP 通訊 */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,10 +134,11 @@
 		65E7F0541B6218B40096817E = {
 			isa = PBXGroup;
 			children = (
-				65E807AB1B73065E00DDB9F4 /* GPUImage.framework */,
+				655F026D1B7B1C2C00841835 /* 模糊背景 */,
+				65F80B1B1B78A8F90097D0F5 /* 背景持續運作 */,
+				65F80B171B7831B80097D0F5 /* 警告視窗動畫 */,
 				65E807AA1B72F56200DDB9F4 /* Page2-進度條 */,
 				65E807A31B72E60600DDB9F4 /* 狀態列通知 */,
-				65E8079C1B72E54800DDB9F4 /* 斷線跳出警告 */,
 				65DA618E1B72223300FD24E3 /* UDP 通訊 */,
 				65E7F05F1B6218B40096817E /* Powercom */,
 				65E7F07C1B6218B40096817E /* PowercomTests */,
@@ -131,6 +158,8 @@
 		65E7F05F1B6218B40096817E /* Powercom */ = {
 			isa = PBXGroup;
 			children = (
+				655F02741B7B253300841835 /* bg1.jpg */,
+				655F02681B7B0D9800841835 /* bg2.jpg */,
 				65E7F0641B6218B40096817E /* AppDelegate.h */,
 				65E7F0651B6218B40096817E /* AppDelegate.m */,
 				65E766961B69F319006B87B0 /* Page1.h */,
@@ -139,8 +168,12 @@
 				65E766991B69F319006B87B0 /* Page2.m */,
 				65E7F09B1B62381C0096817E /* Setting.h */,
 				65E7F09C1B62381C0096817E /* Setting.m */,
+				655F02651B7AF82F00841835 /* Info.h */,
+				655F02661B7AF82F00841835 /* Info.m */,
 				65E7F0951B6230B70096817E /* Cell.h */,
 				65E7F0961B6230B70096817E /* Cell.m */,
+				65F12CDA1B7C295700F2FC3C /* History_event.h */,
+				65F12CDB1B7C295700F2FC3C /* History_event.m */,
 				65E7F06D1B6218B40096817E /* Main.storyboard */,
 				65E7F0721B6218B40096817E /* LaunchScreen.xib */,
 				65F3BBBF1B7093BC00594F2E /* Images.xcassets */,
@@ -175,19 +208,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		65E8079C1B72E54800DDB9F4 /* 斷線跳出警告 */ = {
-			isa = PBXGroup;
-			children = (
-				65E807931B72E53700DDB9F4 /* AMBouncingView.h */,
-				65E807941B72E53700DDB9F4 /* AMBouncingView.m */,
-				65E807951B72E53700DDB9F4 /* AMSmoothAlertConstants.h */,
-				65E807961B72E53700DDB9F4 /* AMSmoothAlertView.h */,
-				65E807971B72E53700DDB9F4 /* AMSmoothAlertView.m */,
-				65E807981B72E53700DDB9F4 /* assets */,
-			);
-			name = "斷線跳出警告";
-			sourceTree = "<group>";
-		};
 		65E807A31B72E60600DDB9F4 /* 狀態列通知 */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +228,24 @@
 				65E807A71B72F55C00DDB9F4 /* ASValueTrackingSlider.m */,
 			);
 			name = "Page2-進度條";
+			sourceTree = "<group>";
+		};
+		65F80B171B7831B80097D0F5 /* 警告視窗動畫 */ = {
+			isa = PBXGroup;
+			children = (
+				65F80B141B7831B30097D0F5 /* AlartViewController.h */,
+				65F80B151B7831B30097D0F5 /* AlartViewController.m */,
+			);
+			name = "警告視窗動畫";
+			sourceTree = "<group>";
+		};
+		65F80B1B1B78A8F90097D0F5 /* 背景持續運作 */ = {
+			isa = PBXGroup;
+			children = (
+				65F80B181B78A8F30097D0F5 /* BackgroundTask.h */,
+				65F80B191B78A8F30097D0F5 /* BackgroundTask.m */,
+			);
+			name = "背景持續運作";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +297,11 @@
 				TargetAttributes = {
 					65E7F05C1B6218B40096817E = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					65E7F0781B6218B40096817E = {
 						CreatedOnToolsVersion = 6.4;
@@ -290,8 +333,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E8079B1B72E53700DDB9F4 /* assets in Resources */,
+				655F02751B7B253300841835 /* bg1.jpg in Resources */,
 				65F3BBC01B7093BC00594F2E /* Images.xcassets in Resources */,
+				655F02691B7B0D9800841835 /* bg2.jpg in Resources */,
 				65E7F06F1B6218B40096817E /* Main.storyboard in Resources */,
 				65E7F0741B6218B40096817E /* LaunchScreen.xib in Resources */,
 			);
@@ -311,18 +355,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655F026C1B7B1BE700841835 /* UIImageView+LBBlurredImage.m in Sources */,
+				65F12CDC1B7C295700F2FC3C /* History_event.m in Sources */,
 				65E7F0661B6218B40096817E /* AppDelegate.m in Sources */,
 				65E807A21B72E5F600DDB9F4 /* OBGradientView.m in Sources */,
 				65E7F09D1B62381C0096817E /* Setting.m in Sources */,
-				65E807991B72E53700DDB9F4 /* AMBouncingView.m in Sources */,
-				65E8079A1B72E53700DDB9F4 /* AMSmoothAlertView.m in Sources */,
+				65F80B161B7831B30097D0F5 /* AlartViewController.m in Sources */,
 				65E807A81B72F55C00DDB9F4 /* ASValuePopUpView.m in Sources */,
 				65E807A91B72F55C00DDB9F4 /* ASValueTrackingSlider.m in Sources */,
 				65E7F0631B6218B40096817E /* main.m in Sources */,
 				65E807A11B72E5F600DDB9F4 /* MPNotificationView.m in Sources */,
 				65DA618D1B72222800FD24E3 /* AsyncUdpSocket.m in Sources */,
+				655F02721B7B1D7600841835 /* PACBlurryScrollView.m in Sources */,
 				65E7669B1B69F319006B87B0 /* Page2.m in Sources */,
 				65E7669A1B69F319006B87B0 /* Page1.m in Sources */,
+				655F02671B7AF82F00841835 /* Info.m in Sources */,
+				65F80B1A1B78A8F30097D0F5 /* BackgroundTask.m in Sources */,
+				655F02731B7B1D7600841835 /* UIImage+PACBlurryEffect.m in Sources */,
 				65E7F0971B6230B70096817E /* Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,32 +497,41 @@
 		65E7F0841B6218B40096817E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = Powercom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.4;
 			};
 			name = Debug;
 		};
 		65E7F0851B6218B40096817E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shupei Lu (Y542TC7VND)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GENERATE_PROFILING_CODE = YES;
 				INFOPLIST_FILE = Powercom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos8.4;
 			};
 			name = Release;
 		};

@@ -14,6 +14,57 @@
 
 @implementation Page2
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:NO];
+    //每次進來都會跑這個
+//    NSLog(@"now is  =%d",global.language_now_is);
+//    int i = global.language_now_is;
+//    switch (i) {
+//        case 1:
+//            //chinese
+//            global.language_now = global.language_ch;
+//            break;
+//        case 2:
+//            global.language_now = [NSArray arrayWithArray:global.language_en];
+//            
+//            //NSLog(@"now 1 %@",global.language_now[1]);
+//            //english
+//            break;
+//        case 3:
+//            global.language_now = global.language_ru;
+//            //russian
+//            break;
+//        case 4:
+//            //arabic
+//            break;
+//        case 5:
+//            //spanish
+//            break;
+//        case 6:
+//            //italy
+//            break;
+//        case 7:
+//            //deutch
+//            break;
+//        case 8:
+//            //svenska
+//            break;
+//        case 9:
+//            //protuga
+//            break;
+//        case 10:
+//            //french
+//            break;
+//        default:
+//            break;
+//    }
+    
+    _input_volt_p2.text = global.language_now[0];
+    _output_volt_p2.text = global.language_now[1];
+    _load_p2.text = global.language_now[3];
+    _battery_level_p2.text = global.language_now[2];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
